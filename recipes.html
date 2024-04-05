@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <script src="drop_down.js"></script>
+    <title>Recipes</title>
+</head>
+<body>
+    <header>
+        <div><a href="#main-content" class="skip">Skip to Main Content</a></div>
+        <p class="information">
+            Welcome to <span id = "name"></span>'s website at <span id = "time"></span><br/>
+        </p>
+        <button type="button" onClick="displayInformation()" class="info">Show!</button>
+        <h1>Recipes</h1>
+        <nav>
+            <ul class="grid-link">
+                <li class="link1"><a href = "index.html">Home</a></li>
+                <li class="link2"><a href = "pets.html">Pets</a></li>
+                <li class="current, link_current"><a href= "recipes.html" class="active">Recipes</a></li>
+                <li class="link3"><a href="travel.html">Travel</a></li>
+            </ul>
+        </nav>
+        <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn">Link</button>
+            <div id="myDropdown" class="dropdown-content">
+                <a href="#Cheese">Mac & Cheese</a>
+              <a href="#Curry">Japanese Chicken Curry</a>
+              <a href="#Dumplings">Chinese Dumplings</a>
+            </div>
+        </div>
+        
+    </header>
+    <main id="main-content">
+        <div class="grid-container", id='Cheese'>
+            <div class="h2_title">
+                <h2>Mac & Cheese</h2>
+                </div>
+            <div class="large_img">
+                <img src="images/mac&cheese.jpg" alt="Homemade Mac&Cheese">
+            </div>
+            <div class="description">
+                Macaroni and cheese, commonly known as mac & cheese, is a comfort food staple that has captured the hearts of people all over the world. Originating from Europe and popularized in the United States, this dish consists of elbow macaroni pasta smothered in a creamy cheese sauce.
+                The simplicity of its ingredients—pasta, cheese, and often a touch of butter or milk—belies a rich, complex flavor that has made it a favorite for both quick weeknight dinners and festive holiday gatherings.
+            </div>
+            <div class="photo1">
+                <img src="images/mac&cheese2.jpg" alt = "Homemade Mac&Cheese">
+                <p>Mac & Cheese ingredients (pasta)</p>
+            </div>
+            <div class="photo2">
+                <img src="images/mac&cheese.gif"  alt="Homemade Mac&Cheese">
+                <p>Processing the ingredients</p>
+            </div>
+            <div class="photo3">
+                <img src="images/mac&cheese4.jpg"  alt="Homemade Mac&Cheese">
+                <p>Mac & Cheese grilled</p>
+            </div>
+            <div class="small_description">
+                <h3>Recipe Ingredients</h3>
+                <div class="drop_down">
+                <ul>
+                    <li>Macaroni</li>
+                    <li>Butter and flours</li>
+                    <li>Milk</li>
+                    <li>Cheese</li>
+                    <li>Seasonings</li>
+                    <li>Bread crumbs</li>
+                </ul>
+            </div>
+            </div>
+        </div>
+        <br>
+        <div class="grid-container">
+            <div class="h2_title", id="Curry">
+                <h2>Japanese Chicken Curry</h2>
+            </div>
+            <div class="large_img">
+                <img src="images/Japanese_Chicken_Curry.jpg" alt="Homemade Mac&Cheese">
+            </div>
+            <div class="description">
+                Unlike Indian or Thai curry, Japanese curry is more savory than spicy. It’s an exemplary comfort food and one of the most-loved home-cooked dishes in Japan.
+            </div>
+            <div class="photo1">
+                <img src="images/curry_sauce.jpeg" alt = "Homemade Mac&Cheese">
+                <p>Curry sauce is the key to make Japanese curry</p>
+            </div>
+            <div class="photo2">
+                <img src="images/raw_chicken_breast.jpeg"  alt="Homemade Mac&Cheese">
+                <p>Raw chicken breast is needed to make curry</p>
+            </div>
+            <div class="photo3">
+                <img src="images/rice.jpeg"  alt="Homemade Mac&Cheese">
+                <p>White rice is the best companion with curry</p>
+            </div>
+            <div class="small_description">
+                <h3>Recipe Ingredients</h3>
+                <div class="drop_down">
+                    <ul>
+                        <li>skinless, boneless chicken breast</li>
+                        <li>1 tablespoon olive oil, water</li>
+                        <li>1 pinch salt and ground black pepper</li>
+                        <li>1 can peas, 5 potatoes </li>
+                        <li>1 onion, 2 carrot, 1 package mushrooms</li>
+                        <li>2 cups jasmine rice</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="grid-container", id="Dumplings">
+            <div class="h2_title">
+                <h2>Chinese Dumplings</h2>
+            </div>
+            <div class="large_img">
+                <img src="images/jiaozi2.jpeg" alt="Stewed dumplings">
+            </div>
+            <div class="description">
+                Chinese dumplings are stuffed parcels made of unleavened dough and savory fillings consisting of minced ingredients like meat, egg, tofu, or vegetables. They can be boiled, pan-fried or steamed.
+            </div>
+            <div class="photo1">
+                <img src="images/jiaozi.jpeg" alt="Dumpling dishes">
+                <p>Chinese dumplings ready for eating!</p>
+            </div>
+            <div class="photo2">
+                <img src="images/jiaozi3.jpeg" alt="Dumplings in ready for stewing">
+                <p>Chinese dumplings ready for stewing</p>
+            </div>
+            <div class="photo3">
+                <img src="images/jiaozi4.jpeg" alt="How to make dumplings">
+                <p>How to make dumplings</p>
+            </div>
+            <div class="small_description">
+                <h3>Ingredients</h3>
+                <div class="drop_down">
+                    <ul>
+                        <li>flour</li>
+                        <li>water</li>
+                        <li>pork</li>
+                        <li>cabbage</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div></div>
+    </main>
+    
+</body>
+</html>

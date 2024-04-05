@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <script src="drop_down.js"></script>
+    <title>Home Page</title>
+</head>
+<body>
+    <header>
+        <div><a href = "#main-content" class="skip" style="color: black;">Skip to Main Content</a></div>
+        <p class="information">
+            Welcome to <span id = "name"></span>'s website at <span id = "time"></span><br/>
+        </p>
+        <button type="button" onClick="displayInformation()" class="info">Show!</button>
+        <h1>CCP Mobile Homework</h1>
+        <nav>
+            <ul class="grid-link">
+                <li class="current, link_current"><a href = "index.html" class="active">Home</a></li>
+                <li class="link1"><a href = "pets.html">Pets</a></li>
+                <li class="link2"><a href= "recipes.html">Recipes</a></li>
+                <li class="link3"><a href="travel.html">Travel</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main-content" class="home_main">
+        <div class="grid-home">
+            <h1 class="home_h1">Common Class Project</h1>
+            <img class="background_img" src="images/background.avif" alt="background image of Paris">
+            <p>This sites include some favourite pets, recipes and travel place of mine and my school mates'.</p>
+        </div>
+        <div>
+        </div>
+    </main>
+    
+</body>
+</html>

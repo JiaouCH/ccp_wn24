@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <script src="drop_down.js"></script>
+    <title>Travel</title>
+</head>
+<body>
+    <header>
+        <div><a href = "#main-content" class="skip">Skip to Main Content</a></div>
+        <p class="information">
+            Welcome to <span id = "name"></span>'s website at <span id = "time"></span><br/>
+        </p>
+        <button type="button" onClick="displayInformation()" class="info">Show!</button>
+        <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn">Link</button>
+            <div id="myDropdown" class="dropdown-content">
+                <a href="#paris">Paris</a>
+              <a href="#osaka">Osaka</a>
+              <a href="#tokyo">Tokyo</a>
+                <a href="#newyork">New York</a>
+                <a href="#monteverde">Monteverde</a>
+            </div>
+        </div>
+        <h1>Travel</h1> 
+        <nav>
+            <ul class="grid-link">
+                <li class="link1"><a href = "index.html">Home</a></li>
+                <li class="link2"><a href = "pets.html">Pets</a></li>
+                <li class="link3"><a href= "recipes.html">Recipes</a></li>
+                <li class="current, link_current"><a href="travel.html" class="active">Travel</a></li>
+            </ul>
+        </nav>
+           
+    </header>
+    <main id="main-content">
+            <!-- Jiaou Chen -->
+        <div class="grid-container", id="paris">
+            <div class="h2_title">
+                <h2>Paris</h2>
+            </div>
+            <div class="large_img">
+                <img src="images/paris.jfif" alt="Paris City View">
+            </div>
+            <div class="description">
+                Paris, the capital of France, is a city renowned for its timeless elegance, rich history, and cultural significance. Known as the "City of Light," Paris is a global center for art, fashion, gastronomy, and literature. Paris is one of the planet's most desired destinations. From its Haussmann-designed boulevards to the winding backstreets of the Marais and Montmartre, Paris' history as a center of culture, ideas and arresting architecture remains undimmed. Sip coffee in Place des Voges; browse for books on the banks of the Seine at Shakespeare and Co.; eat classic French dishes in a bistro in St Germain; or spend an afternoon people watching in the Jardin du Luxembourg. Throw in sights from the Louvre to Notre Dame, Les Invalides to the Eiffel Tower, and you're looking at the world's most picture-perfect city.
+            </div>
+            <div class="photo1">
+                <img src="images/paris_Arc_de_Triomphe.jpg" alt = "The Arc De Triomphe">
+                <p>The Arc de Triomphe</p>
+            </div>
+            <div class="photo2">
+                <img src="images/paris_eiffel_tower.jpg"  alt="The Eiffel Tower">
+                <p>The Eiffel Tower</p>
+            </div>
+            <div class="photo3">
+                <img src="images/paris_louvre_museum.jpg"  alt="The Louvre Museum">
+                <p>The Louvre Museum</p>
+            </div>
+            <div class="small_description">
+                <h3>Scenary</h3>
+                <div class="drop_down">
+                    <ul>
+                        <li>Eiffel Tower</li>
+                        <li>Louvre Museum</li>
+                        <li>Notre Dame Cathedral</li>
+                        <li>The Arc De Triomphe</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="grid-container", id="osaka">
+            <div class="h2_title">
+                <h2>Osaka</h2>
+            </div>
+            <div class="large_img">
+                <img src="images/Osaka.jpg" alt="Osaka City View">
+            </div>
+            <div class="description">
+                Osaka, located in the Kansai region of Japan, is a dynamic and modern city known for its vibrant atmosphere, delicious street food, and historical landmarks. It has been the economic powerhouse of the Kansai Region for many centuries. Osaka was formerly known as Naniwa. Before the Nara Period, when the capital used to be moved with the reign of each new emperor, Naniwa was once Japan's capital city, the first one ever known.
+            </div>
+            <div class="photo1">
+                <img src="images/Osaka_castle.jpg" alt = "Osaka castle">
+                <p>Osaka castle</p>
+            </div>
+            <div class="photo2">
+                <img src="images/Osaka_Dōtonbori.jpg"  alt="Osaka Dotonbori">
+                <p>Dotonbori</p>
+            </div>
+            <div class="photo3">
+                <img src="images/Osaka_city_view.jpg"  alt="Osaka shopping street">
+                <p>Ebisubashi-suji Shopping Street</p>
+            </div>
+            <div class="small_description">
+                <h3>Scenary</h3>
+                <div class="drop_down">
+                    <ul>
+                        <li>Osaka castle</li>
+                        <li>Dotonbori</li>
+                        <li>Ebisubashi-suji Shopping Street</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="grid-container", id="tokyo">
+            <div class="h2_title">
+                <h2>Tokyo</h2>
+            </div>
+            <div class="large_img">
+                <img src="images/tokyo_city_view.jpg" alt="Osaka City View">
+            </div>
+            <div class="description">
+                Tokyo (東京, Tōkyō) is Japan's capital and the world's most populous metropolis. It is also one of Japan's 47 prefectures, consisting of 23 central city wards and multiple cities, towns and villages west of the city center. The Izu and Ogasawara Islands are also part of Tokyo. Today, Tokyo offers a seemingly unlimited choice of shopping, entertainment, culture and dining to its visitors. The city's history can be appreciated in districts such as Asakusa and in many excellent museums, historic temples and gardens. Contrary to common perception, Tokyo also offers a number of attractive green spaces in the city center and within relatively short train rides at its outskirts.
+            </div>
+            <div class="photo1">
+                <img src="images/tokyo_kabukicho.jpg" alt = "Tokyo kabukicho">
+                <p>Tokyo kabukicho</p>
+            </div>
+            <div class="photo2">
+                <img src="images/tokyo_kaminarimon_gate.jpg"  alt="Tokyo Kaminarimon Gate">
+                <p>Tokyo Kaminarimon Gate</p>
+            </div>
+            <div class="photo3">
+                <img src="images/tokyo_shibuya_sky.jpg"  alt="Tokyo shibuya sky">
+                <p>Tokyo shibuya sky</p>
+            </div>
+            <div class="small_description">
+                <h3>Scenary</h3>
+                <div class="drop_down">
+                    <ul>
+                        <li>Tokyo Kabukicho</li>
+                        <li>Tokyo Kaminarimon Gate</li>
+                        <li>Tokyo Shibuya Sky</li>
+                        <li>Tokyo Akihabara</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="grid-container", id="newyork">
+            <div class="h2_title">
+                <h2>New York</h2>
+            </div>
+            <div class="large_img">
+                <img src="images/new-york-city.avif" alt="Newyork Skyline">
+            </div>
+            <div class="description">
+                New York, often called New York City or simply NYC, is the most populous city in the United States, located at the southern tip of New York State on one of the world's largest natural harbors.
+                It's famous for its tall buildings, like the Statue of Liberty and Times Square. There are lots of different neighborhoods with different cultures, and you can find everything from fancy shops in Manhattan to cool art in Brooklyn.
+            </div>
+            <div class="photo1">
+                <img src="images/newyork_bridge.jpg" alt = "The Brooklyn Bridge in Newyork">
+                <p>The Brooklyn Bridge</p>
+            </div>
+            <div class="photo2">
+                <img src="images/newyork_liberty_statue.jpy.jpg"  alt="Statue of Liberty">
+                <p>The Statue of Liberty</p>
+            </div>
+            <div class="photo3">
+                <img src="images/newyork_taxt.jpg"  alt="A street picture in New York">
+                <p>Times Square in the Midtown Manhattan</p>
+            </div>
+            <div class="small_description">
+                <h3>Scenary</h3>
+                <div class="drop_down">
+                    <ul>
+                        <li>Manhattan: Skyscrapers and Urban Jungle, Central Park</li>
+                        <li>Brooklyn: Brooklyn Bridge, Coney Island</li>
+                        <li>Queens: Flushing Meadows-Corona Park</li>
+                        <li>Bronx: The Bronx Zoo</li>
+                        <li>Staten Island: Staten Island Ferry</li>
+                    </ul>
+                </div>
+                <!-- Jiaou Chen -->
+            </div>
+        </div>
+        <br>
+        <div class="grid-container", id="monteverde">
+            <div class="h2_title">
+                <h2>Monteverde</h2>
+            </div>
+            <div class="large_img">
+                <img src="images/Monteverde_skyline.jpeg" alt="Beautiful skyline view of Monteverde">
+            </div>
+            <div class="description">
+                Monteverde is the twelfth canton of the Puntarenas province of Costa Rica. It is located in the Cordillera de Tilarán mountain range. Roughly a four-hour drive from the Central Valley, Monteverde is one of the country's major ecotourism destinations.
+            </div>
+            <div class="photo1">
+                <img src="images/Monteverde_hummingbirds.jpeg" alt = "Humming birds">
+                <p>Humming birds in Monteverde</p>
+            </div>
+            <div class="photo2">
+                <img src="images/Monteverde_hanging_bridges.jpeg"  alt="hanging bridges">
+                <p>hanging bridges in Monteverde</p>
+            </div>
+            <div class="photo3">
+                <img src="images/Monteverde_cloud_forest.jpeg"  alt="Cloud forest">
+                <p>Cloud forest in Monteverde</p>
+            </div>
+            <div class="small_description">
+                <h3>Scenary</h3>
+                <div class="drop_down">
+                    <ul>
+                        <li>hanging bridges</li>
+                        <li>Beautiful birds</li>
+                        <li>Cloud forest</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+</body>
+</html>

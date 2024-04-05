@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <script src="drop_down.js"></script>
+    <title>Pets</title>
+</head>
+<body>
+    <header>
+        <div><a href = "#main-content" class="skip">Skip to Main Content</a></div>
+        <h1>Pets</h1>
+        <p class="information">
+            Welcome to <span id = "name"></span>'s website at <span id = "time"></span><br/>
+        </p>
+        <button type="button" onClick="displayInformation()" class="info">Show!</button>
+        <nav>
+            <ul class="grid-link">
+                <li class="link1"><a href = "index.html">Home</a></li>
+                <li class="current, link_current"><a href = "pets.html" class="active">Pets</a></li>
+                <li class="link2"><a href= "recipes.html">Recipes</a></li>
+                <li class="link3"><a href="travel.html">Travel</a></li>
+            </ul>
+        </nav>
+        <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn">Link</button>
+            <div id="myDropdown" class="dropdown-content">
+                <a href="#Cody">Cody</a>
+              <a href="#Maple">Maple</a>
+              <a href="#Brownie">Brownie</a>
+            </div>
+        </div>
+    </header>
+    <main id="main-content">
+        <div class="grid-container" id="Cody">
+            <div class="h2_title">
+                <h2>Cody dog</h2>
+            </div>
+            <div class="large_img">
+                <img src="images/cody.jpg" alt="Brown labradoodle wearing colorful lei">
+            </div>
+            <div class="description">
+                Cody is a 7yr old Pembroke Corgi owned by Yuqing. He was born in Cavalier Farms, Seattle. He prefers to spend his days lounging on the bean bag. Every day, he enjoys two walks around the neighborhood and likes to make friends with other doggie friends. If lucky enough, he might see the cyclist, but he is not allowed to give chase.
+                Cody loves traveling. He enjoys walking on the beach and taking sun naps. But he hates cold weather. He would like to stay at home lounging by the fireplace in winter.
+            </div>
+            <div class="photo1">
+                <img src="images/cody_play.jpg" alt = "Cody is playing">
+                <p>Cody is playing</p>
+            </div>
+            <div class="photo2">
+                <img src="images/cody_deathvalley.jpg"  alt="Cody in death valley">
+                <p>Cody in the death valley</p>
+            </div>
+            <div class="photo3">
+                <img src="images/cody_sea.jpg"  alt="Cody at the sea">
+                <p>Cody at the sea</p>
+            </div>
+            <div class="small_description">
+                <h3>Likes</h3>
+                <div class="drop_down">
+                    <ul>
+                        <li>Travelling</li>
+                        <li>Lounging</li>
+                        <li>Tennis balls</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="grid-container" id="Brownie">
+            <div class="h2_title">
+                <h2>Brownie</h2>
+            </div>
+            <div class="large_img">
+                <img src="images/standing_brownie2.jpg" alt="Brownie standing">
+            </div>
+            <div class="description">
+                Brownie is an eight year old girl owned by my family. She is a Teddy dog from Shanghai. She loves lay on her bed enjoying the sunshine. Though she is a sweet and clever dog, she hasn't learned to shake hands yet.
+                Brownie is a shy dog. When we visited other people's house, she would follow closely us no matter where we went. Her favourite food is meat pie. But we never fed her too much since she is not young any more and can not digest too much food in one meal.
+            </div>
+            <div class="photo1">
+                <img src="images/brownie_lay_in_the_sunshine.jpg" alt = "Brownie lay in the sunshine">
+                <p>Brownie lay in the sunshine</p>
+            </div>
+            <div class="photo2">
+                <video controls>
+                    <source src="images/brownie.mp4">
+                    Your browser does not support the video tag.  This was a video of a girl and dog demonstrating a sit and stay procedure
+                </video>
+            </div>
+            <div class="photo3">
+                <img src="images/sleepy_brownie.jpg"  alt="Brownie is sleepy">
+                <p>Brownie is sleepy</p>
+            </div>
+            <div class="small_description">
+                <h3>Likes</h3>
+                <div class="drop_down">
+                    <ul>
+                        <li>Meat Pie</li>
+                        <li>Her Family</li>
+                        <li>lay on her bed</li>
+                    </ul>
+                </div>
+            </div>            
+        </div>
+        <br>
+        <div class="grid-container" id="Maple">
+            <div class="h2_title">
+                <h2>Maple</h2>
+            </div>
+            <div class="large_img">
+                <img src="images/maple_santa.JPG" alt="Maple wearing a Santa hat">
+            </div>
+            <div class="description">
+                Maple is a 2 year old tabby cat with brown stripes owned by Eileen. She is very playful and friendly but also loves lounging in the sun! Maple is a huge fan of treats - she has even learned how to open doors to steal some extra treats.
+                Sometimes Maple has boundless energy. At night, she gets the zoomies after eating her final meal of the day. It usually takes her another hour to settle down before she can take a long nap.
+            </div>
+            <div class="photo1">
+                <img src="images/maple_playing.JPG" alt = "Maple playing with human">
+                <p>Maple is playing</p>
+            </div>
+            <div class="photo2">
+                <img src="images/maple_christmas.JPG"  alt="Maple standing beside a Christmas Tree">
+                <p>Maple with a Christmas Tree</p>
+            </div>
+            <div class="photo3">
+                <img src="images/maple_sun.JPG"  alt="Maple lay in the sunshine">
+                <p>Maple lay in the sunshine</p>
+            </div>
+            <div class="small_description">
+                <h3>Likes</h3>
+                <div class="drop_down">
+                    <ul>
+                        <li>Belly rubs</li>
+                        <li>Treats</li>
+                        <li>Stretching her paws</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+</body>
+</html>

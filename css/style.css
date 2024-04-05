@@ -1,0 +1,596 @@
+body {
+    background-color:#e9e2e2;
+}
+
+h1 {
+    font-size: 35px;
+    font-family: 'Harlow Solid Italic', 'Lucida Handwriting', 'Lucida Calligraphy', 'Brush Script MT', cursive;
+    text-align: center;
+    display: block;
+}
+
+.whole_view_point {
+    width: 500px;
+}
+
+.information {
+    position: relative;
+    top: 3px;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+h2{
+    font-size: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(79, 78, 78);
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 20px;
+    font-family: 'Lucida Handwriting', 'Lucida Calligraphy', 'Lucida Handwriting', 'Lucida Calligraphy', 'Brush Script MT', cursive;
+    color: rgb(5, 25, 36);
+    text-align: center;
+}
+
+p {
+    line-height: 2em;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+  .dropbtn {
+    color: rgb(39, 5, 5);
+    background-color: #ffffff;
+    border: #9e9b9b 2px solid;
+    border-radius: 3em;
+    padding: 16px;
+    cursor: pointer;
+    overflow: auto;
+  }
+
+  .info {
+    position: relative;
+    right: auto;
+    display: inline-block;
+    color: rgb(39, 5, 5);
+    background-color: #ffffff;
+    border: #9e9b9b 2px solid;
+    border-radius: 3em;
+    padding: 16px;
+    text-align: center;
+    width: 20%;
+    margin: 0;
+    left: 40%;
+    overflow: auto;
+    cursor: pointer;
+  }
+
+  .info:hover {
+    background-color: #c9c6c67c;
+  }
+  
+  .dropbtn:hover, .dropbtn:focus {
+    background-color: #ebf6fcd2;
+  }
+  
+  .dropdown {
+    position: fixed;
+    top: 280px;
+    left: 2px;
+    display: inline-block;
+    z-index: 1;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #cbdaf5a4;
+    min-width: 160px;
+    overflow: auto;
+    font-size: 18px;
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: rgb(255, 255, 255);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    background-color: #f1f1f195;
+  }
+  
+  .dropdown a:hover {background-color: #e4edf7;}  
+  .dropdown a:active {background-color: #f5c8c8e4;}
+  .show {display: block;}
+
+@media (prefers-reduced-motion: reduce) {
+    .video-element {
+        display: none; /* Hide the video or use any other styling that fits your design */
+    }
+}
+
+ul {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: inline-block;
+    margin-left: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    list-style-type: none;
+}
+
+div > ul {
+    font-size: 15px;
+    font-family: Papyrus, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(63, 63, 63);
+}
+
+li {
+    list-style-type: disc;
+}
+
+a:active {
+    font-weight: 300;
+    color: rgb(15, 9, 10);
+}
+
+a:link, a:visited {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    color: rgb(73, 73, 73);
+    text-shadow: white 2px 2px 2px 2px;
+    z-index: 3;
+}
+
+a:hover {
+    color: rgb(125, 171, 255);
+}
+
+.h2_title {
+    grid-area: 1/2/2/3;
+    background-color: #ffffff;
+    text-align: center;
+    z-index: 1;
+    padding: 3%;
+    width: 100%;
+    border: 3px solid #9b9595;
+}
+
+.h2_title h2 {
+    font-size: 1.2em;
+    letter-spacing: 0.15em;
+}
+
+.description {
+    grid-area: 3/1/5/-1;
+    font-size: 1em;
+    font-family: Georgia, Times, 'Times New Roman', serif;
+    background-color: hsla(0, 8%, 88%, 0.8);
+    border-radius: 2em;
+    box-sizing: border-box;
+    padding: 3%;
+    overflow: auto;
+    margin-top: 10%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.photo1 img, .photo2 img, .photo3 img {
+    padding: 4%;
+    padding-bottom: 8%;
+    margin: auto;
+    width: 100%;
+    display: block;
+}
+
+.photo1, .photo2, .photo3 {
+    width: 100%;
+    height: 100%;
+    background-color: #f5f5f5;
+}
+
+.photo1 p, .photo2 p, .photo3 p {
+    font-family: Papyrus, 'Lucida Sans Regular', 'Lucida Grande', 'Times New Roman', Times, serif;
+    font-size: 0.7em;
+    text-align: center;
+    padding: 2%;
+    font-weight: 600;
+    color: #424242;
+}
+
+
+.large_img {
+    grid-area: 2/1/5/-1;
+    padding: 2%;
+    width: 94%;
+    margin: auto;
+    justify-content: center;
+}
+
+.large_img img {
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.photo3 {
+    grid-area: 5/1/6/2;
+}
+
+.photo1 {
+    grid-area: 5/2/6/3;
+    width: 100%;
+    height: 100%;
+}
+
+.photo2 {
+    grid-area: 5/3/6/4;
+    width: 100%;
+    height: 100%;
+}
+
+video {
+    width: 100%;
+    height: 100%;
+}
+
+.small_description{
+    box-sizing: border-box;
+    border: 2px dotted #959596;
+    border-radius: 2%;
+    width: auto;
+    background-color: #ffffff;
+    grid-area: 6/1/7/4;
+    margin: 5%;
+}
+
+@property --border-angle {
+    syntax: "<angle>";
+    inherits: true;
+    initial-value: 0turn;
+}
+
+/* Define custom property for animation within the scope of .small_description */
+.small_description {
+    --border-angle: 0deg;
+}
+
+.grid-container{
+    grid-template-columns: 32% 32% 32%;
+    position: relative;
+    width: 100%;
+    display: grid;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: auto;
+    column-gap: 1.5%;
+    row-gap: 1%;
+    margin-bottom: 5%;
+}
+
+h3 {
+    margin: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Papyrus;
+}
+
+a.active {
+    font-weight:300;
+    color:rgb(255, 255, 255);
+}
+
+
+.skip {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 8px;
+    height: 8px;
+    overflow: hidden;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: black;
+}
+
+.skip:focus {
+    color: black;
+    position: static;
+    width: auto;
+    height: auto;
+}
+
+.home_main {
+    position: relative;
+    top: 1%;
+    margin-top: 0%;
+}
+
+.grid-home {
+    position: relative;
+    top: 1%;
+    bottom: auto;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    margin-left: 0%;
+    margin-right: 0%;
+}
+
+.home_h1 {
+    display: block;
+    grid-area: 1/2/2/3;
+    color: #342f2f;
+    z-index: 2;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.background_img {
+    width: 100%;
+    height: 100%;
+    grid-area: 1/1/-1/4;
+    filter: opacity(25%);
+    -webkit-mask-image: radial-gradient(circle, black 50%, rgba(0, 0, 0, 0.5) 50%);
+    mask-image: radial-gradient(circle, black 50%, rgba(0, 0, 0, 0.5) 50%);
+}
+
+.grid-home p{
+    padding-top: 5%;
+    grid-area: 2/2/3/3;
+    z-index: 1;
+    text-align: center;
+    font-family: Papyrus;
+    font-weight: bold;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .gif img{
+        display: none;
+    }
+}
+
+.home-page-bg {
+    background-color: #b6c9ea;
+    background-image: radial-gradient(#fcdcdc 10%, transparent 11%),
+      radial-gradient(#ffffff 10%, transparent 11%);
+      /* dotted background source: https://www.w3resource.com/html-css-exercise/html-css-practical-exercises/html-css-practical-exercise-28.php */
+    background-size: 60px 60px;
+    background-position: 0 0, 30px 30px;
+    background-repeat: repeat;
+}
+
+.home-page {
+    background-color: #e0e5ed;
+    background-image: radial-gradient(#fcdcdc 10%, transparent 11%),
+      radial-gradient(#ffffff 10%, transparent 11%);
+      /* dotted background source: https://www.w3resource.com/html-css-exercise/html-css-practical-exercises/html-css-practical-exercise-28.php */
+    background-size: 60px 60px;
+    background-position: 0 0, 30px 30px;
+    background-repeat: repeat;
+}
+
+nav ul li {
+    background-color: rgb(255, 255, 255);
+    font-size: 20px;
+    text-align: center;
+    padding: 10px;
+    margin: 1.5px;
+    margin-bottom: 30px;
+}
+
+.grid-link {
+    position: relative;
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    justify-content: center;
+    align-items: center;
+    column-gap: 0.5%;
+    box-sizing: border-box;
+    width: 100%;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.link_current {
+    grid-area: 1 / 1 / 2 / 4;
+    background-color: #686868;
+}
+
+.link1 {
+    grid-area: 2 / 1 / 3 / 2;
+}
+
+.link2 {
+    grid-area: 2 / 2 / 3 / 3;
+}
+
+.link3 {
+    grid-area: 2 / 3 / 3 / 4;
+}
+
+main {
+    position: absolute;
+    margin: auto;
+}
+
+nav li {
+    border: 0;
+    background: #c3c3c3;
+    border: 2px solid white;
+    border-radius: 4px;
+    box-shadow: 0 5px 0 #c3c3c3;
+    color: #fff;
+    cursor: pointer;
+    font: inherit;
+    margin: 0;
+    outline: 0;
+    padding: 12px 20px;
+    transition: all .1s linear;
+    list-style-type: none;
+  }
+
+.mask {
+    mask-image: url(../images/logo_background.webp);
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+  }
+@media screen and (min-width: 850px) {
+    .home_h1 {
+        grid-area: 2/2/3/3;
+    }
+
+    .grid-home p{
+        grid-area: 3/2/4/3;
+    }
+    
+    .grid-link {
+        grid-template-columns: 12% 12% 12% 12%;
+        justify-content: end;
+        margin-top: 20px;
+        margin-bottom: 50px;
+    }
+    .link_current {
+        grid-row: 1/2;
+        grid-column: 1/2;
+        box-shadow: 0 2px 0 #c3c3c3;
+    }
+    .link1 {
+        grid-row: 1/2;
+        grid-column: 2/3;
+    }
+    .link2 {
+        grid-row: 1/2;
+        grid-column: 3/4;
+    }
+    .link3 {
+        grid-row: 1/2;
+        grid-column: 4/-1;
+    }
+    .grid-container {
+        grid-template-columns: 13% 13% 13% 17.5% 17.5% 17.5%;
+        position: relative;
+        width: 100%;
+        display: grid;
+        justify-content: start;
+        align-content: end;
+        margin: auto;
+        column-gap: 1.5%;
+        row-gap: 1%;
+        margin-bottom: 10%;
+    }
+    .large_img {
+        grid-area: 2/1/5/4;
+        padding: 2%;
+        width: 100%;
+        margin: 0%;
+        justify-content: center;
+        box-shadow: 10px 10px 5px rgb(219, 211, 211);
+        height: 100%;
+    }
+    .h2_title {
+        grid-area: 1/5/2/6;
+        background-color: #ffffff;
+    }
+    .description {
+        background-color: hsla(0, 0%, 100%, 0.5);
+        grid-area: 2/4/3/-1;
+        margin-left: 1%;
+        margin-right: 1%;
+        margin-top: auto;
+        margin-bottom: auto;
+        border-radius: 0.7em;
+        border-width: 3px;
+        border-style: solid;
+        border-image: 
+        linear-gradient(
+        to bottom, 
+        rgb(199, 192, 192), 
+        rgba(0, 0, 0, 0)
+        ) 1 100%;
+        }
+
+    .small_description {
+        grid-area: 4/4/5/-1;
+        padding: 0.5%;
+        margin: 0.5%;
+        background-color: hsla(0, 0%, 100%, 0.5);
+        transition: 0.3s;
+        animation: animate_border 2s linear infinite;
+    }
+
+    .photo1 {
+        grid-area: 3/6/4/7;
+    }
+    .photo2 {
+        grid-area: 3/4/4/5;
+    }
+    .photo3 {
+        grid-area: 3/5/4/6;
+    }
+    .photo1 p, .photo2 p, .photo3 p {
+        font-size: 1.1em;
+    }
+    .photo1:hover, .photo2:hover, .photo3:hover {
+        border: 1.5px solid #d2d2d2;
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+        transform: scale(1.1, 1.1);
+    }
+    li:active {
+        box-shadow: 0 2px 0 #c3c3c3;
+        transform: translateY(3px);
+    }
+}
+
+@media screen and (min-width: 1100px) {
+    
+.drop_down {
+    display: none;
+}
+
+    .small_description {
+        grid-area: 2/2/3/3;
+        cursor: pointer;
+        width: 180px;
+        text-align: center;
+        height: auto;
+        background-color: #f5f5f5b9;
+    }
+    .small_description:hover .drop_down {
+        display: block;
+    }
+    .description {
+        background-color: hsla(0, 0%, 100%, 0.5);
+        grid-area: 2/4/4/-1;
+        margin-left: 1%;
+        margin-right: 1%;
+        margin-top: auto;
+        margin-bottom: auto;
+        border-radius: 0.7em;
+        border-width: 3px;
+        border-style: solid;
+        border-image: 
+        linear-gradient(
+        to bottom, 
+        rgb(199, 192, 192), 
+        rgba(0, 0, 0, 0)
+        ) 1 100%;
+    }
+    .photo1 {
+        grid-area: 4/6/5/7;
+    }
+    .photo2 {
+        grid-area: 4/4/5/5;
+    }
+    .photo3 {
+        grid-area: 4/5/5/6;
+    }
+}
+
+  

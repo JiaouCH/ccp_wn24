@@ -1,0 +1,35 @@
+.description {
+    grid-area: 2/4/3/-1;
+}
+.small_description {
+    grid-area: 4/4/4/-1;
+}
+.photo1 {
+    grid-area: 3/6/4/7;
+}
+.photo2 {
+    grid-area: 3/4/4/5;
+}
+.photo3 {
+    grid-area: 3/5/4/6;
+}
+
+
+
+.description {
+    grid-area: 2/4/3/-1;
+}
+.small_description {
+    grid-area: 3/4/4/-1;
+}
+.photo1 {
+    grid-area: 4/6/5/7;
+}
+.photo2 {
+    grid-area: 4/4/5/5;
+}
+.photo3 {
+    grid-area: 4/5/5/6;
+}
+
+background-color:#e6e6e6;
